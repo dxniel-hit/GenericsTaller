@@ -114,9 +114,9 @@ public class Conjunto<T> implements Iterable<T> {
      *
      * @param elemento
      */
-    public void union(Conjunto<T> otherSet) {
-        for (T element : otherSet) {
-            agregar(element);
+    public void union(Conjunto<T> subconjunto) {
+        for (T elemento : subconjunto) {
+            agregar(elemento);
         }
     }
 
