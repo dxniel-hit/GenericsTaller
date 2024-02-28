@@ -18,9 +18,9 @@ public class ConjuntoTest {
         conjuntoC.agregar("I");
 
         Conjunto<String> conjuntoD = new Conjunto<>(5);
-        conjuntoD.agregar("B");
-        conjuntoD.agregar("S");
-        conjuntoD.agregar("D");
+        conjuntoD.agregar("U");
+        conjuntoD.agregar("N");
+        conjuntoD.agregar("I");
 
         Conjunto<Double> conjuntoE = new Conjunto<>(5);
         conjuntoE.agregar(10.0);
@@ -53,6 +53,8 @@ public class ConjuntoTest {
 
         //Verificar si un elemento está contenido en el conjunto.
         System.out.println("¿Es el conjunto B subconjunto del conjunto A?: " + conjuntoA.esSubconjunto(conjuntoB));
+        System.out.println("¿Es el conjunto D subconjunto del conjunto C?: " + conjuntoC.esSubconjunto(conjuntoD));
+        System.out.println("¿Es el conjunto F subconjunto del conjunto E?: " + conjuntoE.esSubconjunto(conjuntoF));
 
         // Agregar todos los elementos de un conjunto a otro de todos los tipos de datos.
         conjuntoA.union(conjuntoB);
